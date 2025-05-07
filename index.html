@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SoulStretch Yoga</title>
   <style>
     body {
@@ -12,36 +12,34 @@
     }
 
     header {
-      background-color: #fff;
-      padding: 1em;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 30px 10px 10px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
     nav {
-      margin-top: 1em;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     nav a {
-      margin: 0 1em;
+      margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: black;
     }
 
     section {
-      padding: 2em;
-    }
-
-    h2 {
       text-align: center;
-      margin-bottom: 1em;
+      padding: 20px;
     }
 
-    .cards {
+    .card-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      padding: 20px;
     }
 
     .card {
@@ -49,63 +47,45 @@
       border: 1px solid #ccc;
       border-radius: 10px;
       overflow: hidden;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      background-color: #fafafa;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
     .card img {
       width: 100%;
       height: auto;
-      display: block;
     }
 
-    .card p {
-      padding: 1em;
-      font-size: 0.95em;
+    .container {
+      padding: 10px;
     }
 
-    ul {
-      max-width: 600px;
+    .testimonials, .contact {
+      max-width: 700px;
       margin: auto;
-    }
-
-    .testimonials {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .testimonials p {
-      margin: 0.5em 0;
+      padding: 20px;
+      text-align: left;
     }
 
     footer {
       text-align: center;
-      padding: 2em;
-      background-color: #eee;
-      font-size: 0.9em;
-    }
-
-    form {
-      max-width: 400px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5em;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f2f2f2;
     }
 
     input, textarea {
-      padding: 0.5em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
     }
 
     button {
+      width: 100%;
       background-color: green;
       color: white;
+      padding: 10px;
       border: none;
-      padding: 0.6em;
-      border-radius: 5px;
       cursor: pointer;
     }
 
@@ -116,19 +96,17 @@
 </head>
 <body>
 
-  <header>
-    <h1>SoulStretch Yoga</h1>
-    <nav>
-      <a href="#classes">Classes</a>
-      <a href="#inspirations">Inspirations</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <header>SoulStretch Yoga</header>
+  <nav>
+    <a href="#classes">Classes</a>
+    <a href="#inspirations">Inspirations</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="classes">
     <h2>Our Classes</h2>
-    <ul>
+    <ul style="text-align: left; display: inline-block;">
       <li>Personalized 1-on-1 sessions</li>
       <li>Group sessions (online/offline)</li>
       <li>Pre-recorded courses (yours to learn from forever)</li>
@@ -137,54 +115,67 @@
 
   <section id="inspirations">
     <h2>Inspirational Journeys</h2>
-    <div class="cards">
+    <div class="card-container">
       <div class="card">
-        <img src="images/steve.png" alt="Steve Jobs">
-        <p><strong>Steve Jobs</strong><br>Used yoga for creativity and mental clarity in the tech world.</p>
+        <img src="images/steve.jpg" alt="Steve Jobs">
+        <div class="container">
+          <h4><b>Steve Jobs</b></h4>
+          <p>Used yoga for creativity and mental clarity in the tech world.</p>
+        </div>
       </div>
+
       <div class="card">
-        <img src="images/sachin.png" alt="Sachin Tendulkar">
-        <p><strong>Sachin Tendulkar</strong><br>Improved focus and longevity in cricket with yoga.</p>
+        <img src="images/sachin.jpg" alt="Sachin Tendulkar">
+        <div class="container">
+          <h4><b>Sachin Tendulkar</b></h4>
+          <p>Improved focus and longevity in cricket with yoga.</p>
+        </div>
       </div>
+
       <div class="card">
-        <img src="images/robert.png" alt="Robert Downey Jr.">
-        <p><strong>Robert Downey Jr.</strong><br>Overcame addiction and built mental strength with yoga.</p>
+        <img src="images/robert.jpg" alt="Robert Downey Jr.">
+        <div class="container">
+          <h4><b>Robert Downey Jr.</b></h4>
+          <p>Overcame addiction and built mental strength with yoga.</p>
+        </div>
       </div>
+
       <div class="card">
-        <img src="images/virat.png" alt="Virat Kohli">
-        <p><strong>Virat Kohli</strong><br>Enhances flexibility and performance through yoga.</p>
+        <img src="images/virat.jpg" alt="Virat Kohli">
+        <div class="container">
+          <h4><b>Virat Kohli</b></h4>
+          <p>Enhances flexibility and performance through yoga.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="testimonials">
+  <section id="testimonials" class="testimonials">
     <h2>Testimonials</h2>
-    <div class="testimonials">
-      <p><strong>Aditi Mehra, 26</strong> – “Yoga helped me feel calmer, sleep better, and become positive and strong.”</p>
-      <p><strong>Rajesh Chauhan, 40</strong> – “My work stress melted away and I started feeling happier and healthier.”</p>
-      <p><strong>Sameer Jain, 32</strong> – “Yoga stretched not just my body but also my mind. I’m more flexible mentally too.”</p>
-      <p><strong>Sneha Rao, 29</strong> – “Every morning yoga class made me feel light and clear-headed.”</p>
-      <p><strong>Ankur Verma, 45</strong> – “My knee pain reduced drastically and my energy returned.”</p>
-      <p><strong>Kriti Anand, 21</strong> – “SoulStretch made yoga fun and engaging. Loved the variations and pace.”</p>
-      <p><strong>Tarun Malhotra, 38</strong> – “Didn’t expect yoga to help with digestion, but it did. I feel much better.”</p>
-      <p><strong>Neha Dutt, 27</strong> – “Best decision of my year. I feel grounded, strong, and mentally balanced.”</p>
-      <p><strong>Rishi Bansal, 33</strong> – “A routine I look forward to. Calm mind, flexible body, and clarity.”</p>
-      <p><strong>Priya Lakshmi, 19</strong> – “Yoga gave me her bandwidth and energy, truly feel reborn and strong.”</p>
-    </div>
+    <p><strong>Aditi Mehra, 26 –</strong> “Yoga helped me feel calmer, sleep better, and become positive and strong.”</p>
+    <p><strong>Rajesh Chauhan, 40 –</strong> “My work stress melted away and I started feeling happier and healthier.”</p>
+    <p><strong>Sameer Jain, 32 –</strong> “Yoga stretched not just my body but also my mind. I’m more flexible mentally too.”</p>
+    <p><strong>Sneha Rao, 29 –</strong> “Every morning yoga class made me feel light and clear-headed.”</p>
+    <p><strong>Ankur Verma, 45 –</strong> “My knee pain reduced drastically and my energy returned.”</p>
+    <p><strong>Kriti Anand, 21 –</strong> “SoulStretch made yoga fun and engaging. Loved the variations and pace.”</p>
+    <p><strong>Tarun Malhotra, 38 –</strong> “Didn’t expect yoga to help with digestion, but it did. I feel much better.”</p>
+    <p><strong>Neha Dutt, 27 –</strong> “Best decision of my year. I feel grounded, strong, and mentally balanced.”</p>
+    <p><strong>Rishi Bansal, 33 –</strong> “A routine I look forward to. Calm mind, flexible body, and clarity.”</p>
+    <p><strong>Priya Lakshmi, 19 –</strong> “Yoga gave me her bandwidth and energy, truly feel reborn and strong.”</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <form>
-      <input type="email" placeholder="Email (required)" required>
-      <input type="tel" placeholder="Phone (e.g. +91 9876543210)">
-      <textarea rows="4" placeholder="Message"></textarea>
+      <input type="email" placeholder="Email (required)" required />
+      <input type="tel" placeholder="Phone (e.g. +91 9876543210)" />
+      <textarea placeholder="Message" rows="4"></textarea>
       <button type="submit">Submit</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 SoulStretch Yoga
+    © 2025 SoulStretch Yoga
   </footer>
 
 </body>
