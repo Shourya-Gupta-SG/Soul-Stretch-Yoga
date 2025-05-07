@@ -2,95 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SoulStretch Yoga</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      margin-top: 1em;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #333;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background-color: #fafafa;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card p {
+      padding: 1em;
+      font-size: 0.95em;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .testimonials {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .testimonials p {
+      margin: 0.5em 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+
+    input, textarea {
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 0.6em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="#classes">Classes</a></li>
-      <li><a href="#inspiration">Inspiration</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header class="hero">
-    <h1>Find balance, strength, and calm with personalized yoga sessions</h1>
-    <p>Fill the form for a free demo class.</p>
-    <a href="#contact" class="btn">Join a Demo Class</a>
+  <header>
+    <h1>SoulStretch Yoga</h1>
+    <nav>
+      <a href="#classes">Classes</a>
+      <a href="#inspirations">Inspirations</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section id="classes">
     <h2>Our Classes</h2>
     <ul>
       <li>Personalized 1-on-1 sessions</li>
-      <li>Online group yoga classes</li>
-      <li>Free meditation sessions (if you fill the form below)</li>
+      <li>Group sessions (online/offline)</li>
+      <li>Pre-recorded courses (yours to learn from forever)</li>
     </ul>
   </section>
 
-  <section id="inspiration">
+  <section id="inspirations">
     <h2>Inspirational Journeys</h2>
     <div class="cards">
       <div class="card">
-        <img src="Asset/Steve.jpg" alt="Steve Jobs" />
-        <h3>Steve Jobs</h3>
-        <p>Steve Jobs practiced Zen Buddhism and credited yoga for his mindfulness and vision.</p>
+        <img src="images/steve.jpg" alt="Steve Jobs">
+        <p><strong>Steve Jobs</strong><br>Used yoga for creativity and mental clarity in the tech world.</p>
       </div>
       <div class="card">
-        <img src="Asset/sachin.jpg" alt="Sachin Tendulkar" />
-        <h3>Sachin Tendulkar</h3>
-        <p>Sachin Tendulkar used yoga to manage stress and stay mentally strong.</p>
+        <img src="images/sachin.jpg" alt="Sachin Tendulkar">
+        <p><strong>Sachin Tendulkar</strong><br>Improved focus and longevity in cricket with yoga.</p>
       </div>
       <div class="card">
-        <img src="Asset/Virat.jpg" alt="Virat Kohli" />
-        <h3>Virat Kohli</h3>
-        <p>Virat Kohli uses yoga to enhance flexibility and focus.</p>
+        <img src="images/robert.jpg" alt="Robert Downey Jr.">
+        <p><strong>Robert Downey Jr.</strong><br>Overcame addiction and built mental strength with yoga.</p>
       </div>
       <div class="card">
-        <img src="Asset/rdj.jpg" alt="Robert Downey Jr." />
-        <h3>Robert Downey Jr.</h3>
-        <p>Robert Downey Jr. credits yoga and meditation for helping him maintain mental health, focus, and discipline in his recovery journey and career.</p>
+        <img src="images/virat.jpg" alt="Virat Kohli">
+        <p><strong>Virat Kohli</strong><br>Enhances flexibility and performance through yoga.</p>
       </div>
     </div>
   </section>
 
   <section id="testimonials">
     <h2>Testimonials</h2>
-    <ul>
-      <li><strong>Aarti Mehra, 34 –</strong> Yoga helped her feel calmer, sleep better, and boosted posture and energy during a stressful time.</li>
-      <li><strong>Rajesh Iyer, 47 –</strong> Yoga relieved his chronic back pain and improved focus and flexibility.</li>
-      <li><strong>Simran Kaur, 29 –</strong> Post-pregnancy yoga aided her weight loss and emotional well-being.</li>
-      <li><strong>Ankit Sharma, 22 –</strong> Yoga reduced his anxiety and improved focus and memory as a student.</li>
-      <li><strong>Nandita Rao, 56 –</strong> Gentle, modified yoga increased her energy and joint mobility in later years.</li>
-      <li><strong>Neha Verma, 26 –</strong> Yoga eased her screen-induced neck and back pain and boosted daily energy.</li>
-      <li><strong>Aditya Malhotra, 28 –</strong> Yoga helped him manage academic stress and anxiety with better focus.</li>
-      <li><strong>Shruti Pillai, 24 –</strong> Yoga rekindled her mind-body connection and boosted creativity and sleep.</li>
-      <li><strong>Kunal Deshmukh, 30 –</strong> Yoga gave him mental clarity and stress relief in entrepreneurial life.</li>
-      <li><strong>Ayesha Khan, 23 –</strong> Yoga brought discipline and balance to her chaotic lifestyle.</li>
-      <li><strong>Aarav Singh, 10 –</strong> Yoga improved his focus and made school more enjoyable with fun exercises.</li>
-      <li><strong>Meera Joshi, 14 –</strong> Yoga helped her stay calm and confident during exam stress.</li>
-      <li><strong>Tanmay Nair, 16 –</strong> Yoga enhanced his athletic performance with better flexibility and recovery.</li>
-      <li><strong>Riya Kulkarni, 12 –</strong> Yoga relieved her headaches and fatigue, making her feel fresh and strong.</li>
-    </ul>
+    <div class="testimonials">
+      <p><strong>Aditi Mehra, 26</strong> – “Yoga helped me feel calmer, sleep better, and become positive and strong.”</p>
+      <p><strong>Rajesh Chauhan, 40</strong> – “My work stress melted away and I started feeling happier and healthier.”</p>
+      <p><strong>Sameer Jain, 32</strong> – “Yoga stretched not just my body but also my mind. I’m more flexible mentally too.”</p>
+      <p><strong>Sneha Rao, 29</strong> – “Every morning yoga class made me feel light and clear-headed.”</p>
+      <p><strong>Ankur Verma, 45</strong> – “My knee pain reduced drastically and my energy returned.”</p>
+      <p><strong>Kriti Anand, 21</strong> – “SoulStretch made yoga fun and engaging. Loved the variations and pace.”</p>
+      <p><strong>Tarun Malhotra, 38</strong> – “Didn’t expect yoga to help with digestion, but it did. I feel much better.”</p>
+      <p><strong>Neha Dutt, 27</strong> – “Best decision of my year. I feel grounded, strong, and mentally balanced.”</p>
+      <p><strong>Rishi Bansal, 33</strong> – “A routine I look forward to. Calm mind, flexible body, and clarity.”</p>
+      <p><strong>Priya Lakshmi, 19</strong> – “Yoga gave me her bandwidth and energy, truly feel reborn and strong.”</p>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: soulstretch.lifeyoga.com<br>Phone: +91 7607042622</p>
     <form>
-      <input type="text" name="name" placeholder="Name" required /><br>
-      <input type="email" name="email" placeholder="Email" required /><br>
-      <textarea name="message" placeholder="Message" required></textarea><br>
+      <input type="email" placeholder="Email (required)" required>
+      <input type="tel" placeholder="Phone (e.g. +91 9876543210)">
+      <textarea rows="4" placeholder="Message"></textarea>
       <button type="submit">Submit</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 SoulStretch Yoga</p>
+    &copy; 2025 SoulStretch Yoga
   </footer>
 
 </body>
